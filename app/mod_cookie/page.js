@@ -1,5 +1,6 @@
 "use client";
 import Cookies from "js-cookie";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Suspense, useState } from "react";
 export default function ModCookie() {
@@ -9,13 +10,13 @@ export default function ModCookie() {
   const handleLangPreference = (lang) => {
     setlang(lang);
     Cookies.set("lang", lang);
-    router.push("/read_cookie");
+    //router.push("/read_cookie");
   };
 
   const handleThemePreference = (theme) => {
     setTheme(theme);
     Cookies.set("theme", theme);
-    router.push("/read_cookie");
+    // router.push("/read_cookie");
   };
 
   return (
@@ -24,7 +25,7 @@ export default function ModCookie() {
         <Suspense fallback={<h3>Loadding.....</h3>}>
           <div className="  justify-center  m-auto">
             <section className="bg-white dark:bg-gray-900">
-              <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+              <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md text-center">
                 <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
                   Set Cookies
                 </h2>
@@ -51,6 +52,15 @@ export default function ModCookie() {
                 >
                   Set {lang ?? ""} Language
                 </button>
+
+                <Link
+                  href="/read_cookie"
+                  className="border border-blue-500 bg-blue-500 text-white rounded-md px-4 py-2 m-2 
+                  transition duration-500 ease select-none hover:bg-blue-600 focus:outline-none 
+                   focus:shadow-outline"
+                >
+                  Read cookie
+                </Link>
               </div>
             </section>
           </div>
