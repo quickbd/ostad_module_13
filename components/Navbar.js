@@ -48,6 +48,10 @@ const Navbar = () => {
           </li>
 
           <li className="p-4">
+            <Link href="/redirection">Redirection</Link>
+          </li>
+
+          <li className="p-4">
             <Link href="/header_modification">Header Modification</Link>
           </li>
         </ul>
