@@ -6,7 +6,6 @@ export async function middleware(res, req) {
     console.log(3333);
     const response = new NextResponse();
     response.redirect("/rediectpage");
-
-    return response; 
+    return response;
   }
 }
