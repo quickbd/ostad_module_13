@@ -54,7 +54,7 @@ export default function redirectpage() {
                       View Preferences
                     </Link>
 
-                    <div>
+                    <div className="mt-8">
                       {" "}
                       ===========================OR=======================
                     </div>
