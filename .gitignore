@@ -7,8 +7,8 @@
  
 
 #MHZ
-/app/middleware.js
-/app/blog/_api/
+/next.config.js
+ 
 
 # testing
 /coverage
