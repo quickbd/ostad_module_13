@@ -1,7 +1,7 @@
-/** @type {import('next').NextConfig} */
+/** @type {import('next').NextConfig}  */
 const nextConfig = {
   env: {
-    BASE_URL: "https://ostad-module-13.vercel.app/",
+    BASE_URL: "http://localhost:3000/",
   },
 };
 module.exports = nextConfig;
