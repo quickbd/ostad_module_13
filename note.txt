@@ -71,10 +71,7 @@ Create a route that returns a JSON response with the following data:
  
 
 
-Redirection:
-
-
- 
+Redirection: 
 
 
 Implement a route that redirects the user to a different page within your application using NextResponse.redirect().
