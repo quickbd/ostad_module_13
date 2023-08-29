@@ -50,6 +50,10 @@ const Navbar = () => {
           <li className="p-4">
             <Link href="/redirection">Redirection</Link>
           </li>
+  <li className="p-4">
+            <Link href="/json_response">JSON Response</Link>
+          </li>
+          
 
           <li className="p-4">
             <Link href="/header_modification">Header Modification</Link>

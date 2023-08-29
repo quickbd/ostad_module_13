@@ -64,7 +64,9 @@ export default function headerModification(param) {
                       for="api"
                       className="block mb-2 form-control text-sm font-medium text-gray-900 dark:text-gray-300"
                     >
-                      API Request To(POST): {baseUrl}api/token
+                      API Request To(POST): <span className="text-blue-600  italic">{baseUrl}api/token</span>
+                      <p>If you want to test from postman, just set variable "auth_token" in headers</p>
+                    <p>Or Try from following Form</p>
                     </label>
                   </div>
                   <div>
